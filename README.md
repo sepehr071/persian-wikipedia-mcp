@@ -86,10 +86,6 @@ Real answer (18 Nov 2026): `wiki_infobox(title="شیراز")` returned the metro
 - Results are cached for 60 seconds (not `wiki_random`), at most two requests run at a time and a response is capped at 5 MB.
 - Both the direct Iranian line and foreign networks work in testing. If your network blocks Wikipedia, set `PERSIAN_WIKIPEDIA_MCP_PROXY`. The server ignores system proxy variables on purpose.
 
-## How it works
-
-The server calls the public Wikimedia APIs of fa.wikipedia.org (the MediaWiki Action API and the REST API) with a plain HTTP client, a descriptive User-Agent in line with the Wikimedia User-Agent policy, a host allowlist and a short cache. Every tool was checked in Chrome against the real rendered fa.wikipedia.org pages (search, summary, sections, article text, infobox, languages, nearby, trending, random) on 18 Nov 2026.
-
 ## فارسی
 
 <div dir="rtl">
